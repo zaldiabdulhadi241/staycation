@@ -1,0 +1,446 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  padding: 0 150px;
+}
+
+/* Styling Navigation Bar */
+
+nav {
+  box-shadow: 0 3px #eaeaea;
+}
+
+.nav-flex {
+  display: flex;
+  width: 100%;
+  height: 80px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-brand {
+  font-size: 26px;
+  color: #3252df;
+  font-weight: 500;
+}
+
+.nav-brand span {
+  color: #152c5b;
+}
+
+.nav-menus {
+  display: flex;
+  width: 40%;
+  justify-content: space-between;
+}
+
+.nav-menus .menu-item {
+  list-style: none;
+}
+
+.nav-menus .menu-item a {
+  color: #152c5b;
+  text-decoration: none;
+}
+
+.nav-menus .menu-item.active a {
+  color: #3252df;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+/* End Styling Navigation Bar */
+
+#hero {
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+
+#hero .hero-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#hero aside {
+  width: 40%;
+}
+
+.hero-heading {
+  font-size: 40px;
+  font-weight: 700;
+  color: #152c5b;
+  margin-bottom: 20px;
+}
+
+.hero-description {
+  font-weight: 300;
+  color: #b0b0b0;
+  margin-bottom: 30px;
+}
+
+.hero-cta {
+  cursor: pointer;
+  width: 210px;
+  height: 50px;
+  border: none;
+  background-color: #3252df;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 5px;
+  box-shadow: 0 8px 15px rgba(50, 82, 223, 0.3);
+  margin-bottom: 80px;
+}
+
+.hero-items {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero-item .item-flex {
+  display: flex;
+}
+
+.hero-item .item-value {
+  color: #152c5b;
+  font-weight: 500;
+  margin-right: 4px;
+}
+
+.hero-item .item-label {
+  color: #b0b0b0;
+  font-weight: 300;
+}
+
+.hero-right {
+  position: relative;
+}
+
+.hero-right img {
+  border-radius: 100px 15px 15px 15px;
+}
+
+.hero-right .img-shadow {
+  width: 520px;
+  height: 410px;
+  z-index: -10;
+  position: absolute;
+  top: 51px;
+  left: 53px;
+  border: 2px solid #eaeaea;
+  border-radius: 100px 15px 15px 15px;
+}
+
+/* Styling Most Picked */
+#most-picked {
+  margin-bottom: 70px;
+}
+
+.most-picked-heading {
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: 500;
+  color: #152c5b;
+}
+
+.most-picked-flex {
+  display: flex;
+  align-items: center;
+}
+
+.most-picked-img {
+  margin-right: 33px;
+}
+
+.mp-item-heading {
+  font-size: 36px;
+  font-weight: 600;
+  color: #152c5b;
+  margin-bottom: 4px;
+}
+
+.mp-item-location {
+  font-size: 18px;
+  font-weight: 300;
+  color: #b0b0b0;
+  margin-bottom: 23px;
+}
+
+.mp-item-description {
+  font-weight: 300;
+  color: #b0b0b0;
+}
+
+/* End Styling Most Picked */
+
+/* Styling Backyard */
+#backyard {
+  margin-bottom: 70px;
+}
+
+.backyard-heading {
+  font-size: 24px;
+  font-weight: 500;
+  color: #152c5b;
+  margin-bottom: 20px;
+}
+
+.backyard-flex {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.backyard-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.by-img {
+  margin-bottom: 16px;
+}
+
+.by-heading {
+  font-size: 20px;
+  font-weight: 500;
+  color: #152c5b;
+}
+
+.by-location {
+  font-size: 15px;
+  font-weight: 300;
+  color: #b0b0b0;
+}
+/* End Styling Backyard */
+
+/* Styling Living Room */
+#living-room {
+  margin-bottom: 70px;
+}
+
+.living-room-heading {
+  font-size: 24px;
+  font-weight: 500;
+  color: #152c5b;
+  margin-bottom: 20px;
+}
+
+.living-room-flex {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.living-room-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.lr-img {
+  margin-bottom: 16px;
+}
+
+.lr-heading {
+  font-size: 20px;
+  font-weight: 500;
+  color: #152c5b;
+}
+
+.lr-location {
+  font-size: 15px;
+  font-weight: 300;
+  color: #b0b0b0;
+}
+/* End Styling Living Room */
+
+/* Styling Kitchen */
+#kitchen {
+  margin-bottom: 110px;
+}
+
+.kitchen-heading {
+  font-size: 24px;
+  font-weight: 500;
+  color: #152c5b;
+  margin-bottom: 20px;
+}
+
+.kitchen-flex {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.kitchen-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.kc-img {
+  margin-bottom: 16px;
+}
+
+.kc-heading {
+  font-size: 20px;
+  font-weight: 500;
+  color: #152c5b;
+}
+
+.kc-location {
+  font-size: 15px;
+  font-weight: 300;
+  color: #b0b0b0;
+}
+/* End Styling Kitchen */
+
+/* Styling Review */
+#review {
+  margin-bottom: 70px;
+}
+
+.review-flex {
+  display: flex;
+  align-items: center;
+}
+
+.review-img {
+  position: relative;
+  margin-right: 57px;
+}
+
+.review-img img {
+  border-radius: 15px 15px 100px 15px;
+}
+
+.review-img-shadow {
+  width: 365px;
+  height: 500px;
+  position: absolute;
+  z-index: -10;
+  bottom: 40px;
+  right: 40px;
+  border-radius: 15px 15px 100px 15px;
+  border: 2px solid #eaeaea;
+}
+
+.review-heading {
+  font-size: 24px;
+  font-weight: 500;
+  color: #152c5b;
+  margin-bottom: 40px;
+}
+
+.review-stars {
+  margin-bottom: 8px;
+}
+
+.review-description {
+  font-size: 32px;
+  color: #152c5b;
+  margin-bottom: 8px;
+}
+
+.review-profile {
+  font-size: 18px;
+  font-weight: 300;
+  color: #b0b0b0;
+  margin-bottom: 50px;
+}
+
+.review-cta {
+  border: none;
+  background-color: #3252df;
+  color: #fff;
+  width: 210px;
+  height: 50px;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 5px;
+  box-shadow: 0 8px 15px rgba(50, 82, 223, 0.3);
+}
+
+/* End Styling Review */
+
+/* Styling Footer */
+#footer {
+  border-top: 1px solid #eaeaea;
+  padding: 50px 0px;
+}
+
+.footer-flex {
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.footer-brand {
+  width: 40%;
+}
+
+.footer-brand .brand {
+  font-size: 26px;
+  font-weight: 500;
+  color: #3252df;
+  margin-bottom: 8px;
+}
+
+.footer-brand .brand span {
+  color: #152c5b;
+}
+
+.footer-brand .tagline {
+  font-weight: 300;
+  color: #b0b0b0;
+}
+
+.footer-items-wrap {
+  display: flex;
+}
+
+.footer-wrap {
+  display: flex;
+  flex-direction: column;
+  margin-left: 70px;
+}
+
+.footer-heading {
+  font-size: 18px;
+  font-weight: 500;
+  color: #152c5b;
+  margin-bottom: 23px;
+}
+
+.footer-menus {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.footer-item {
+  list-style: none;
+}
+
+.footer-item a {
+  text-decoration: none;
+  font-weight: 300;
+  color: #b0b0b0;
+}
+
+#footer .copyright {
+  text-align: center;
+  color: #b0b0b0;
+  font-weight: 300;
+}
+/* End Styling Footer */
